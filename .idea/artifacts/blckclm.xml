@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" name="blckclm">
+    <output-path>$PROJECT_DIR$/out/artifacts/blckclm</output-path>
+    <root id="root">
+      <element id="archive" name="blckclm.jar">
+        <element id="module-output" name="blckclm" />
+      </element>
+    </root>
+  </artifact>
+</component>
