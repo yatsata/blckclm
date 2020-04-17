@@ -39,12 +39,14 @@ public class ContractUtils {
             FileProcessingUtils.createSHFile(shAbsPath, jsAbsPath, outFileAbsPath, blochChainConfigFolder);
             Process process = Runtime.getRuntime().exec(bashExecutable+ " " + shAbsPath);
             process.waitFor();
+            result = getContractResponse(outFileAbsPath);
             Files.deleteIfExists(Paths.get(shAbsPath));
             Files.deleteIfExists(Paths.get(jsAbsPath));
+            Files.deleteIfExists(Paths.get(outFileAbsPath));
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
-        return getContractResponse(outFileAbsPath);
+        return result;
     }
 
     public static String getContractResponse(String outFileAbsPath){
@@ -53,7 +55,6 @@ public class ContractUtils {
             Properties contractResult = new Properties();
             contractResult.load(input);
             result = contractResult.getProperty(CONTRACT_EXECUTION_RESULT);
-            Files.deleteIfExists(Paths.get(outFileAbsPath));
         } catch (IOException ex) {
             ex.printStackTrace();
         }
