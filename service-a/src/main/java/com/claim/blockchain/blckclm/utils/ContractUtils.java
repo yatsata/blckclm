@@ -1,5 +1,7 @@
 package com.claim.blockchain.blckclm.utils;
 
+import com.claim.blockchain.blckclm.model.HealthClaimRq;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
@@ -10,6 +12,10 @@ import java.util.Properties;
 public class ContractUtils {
 
     public static final String CONTRACT_EXECUTION_RESULT = "CONTRACT_EXECUTION_RESULT";
+
+    public static void processRequestData(HealthClaimRq request){
+        System.out.println(request.getSenderId());
+    }
 
     public static String getContractResponse(){
         String bashExecutable = "C:\\Program Files\\Git\\git-bash.exe";
