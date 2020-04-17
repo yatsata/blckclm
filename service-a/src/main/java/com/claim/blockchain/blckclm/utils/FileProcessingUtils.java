@@ -41,14 +41,4 @@ public class FileProcessingUtils {
         }
     }
 
-    public static void deleteFiles(String shAbsPath, String outFileAbsPath, String jsAbsPath) {
-        try {
-            Files.deleteIfExists(Paths.get(shAbsPath));
-            Files.deleteIfExists(Paths.get(outFileAbsPath));
-            Files.deleteIfExists(Paths.get(jsAbsPath));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
 }

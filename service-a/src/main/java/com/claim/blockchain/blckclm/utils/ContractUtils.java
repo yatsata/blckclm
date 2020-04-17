@@ -17,7 +17,7 @@ public class ContractUtils {
         System.out.println(request.getSenderId());
     }
 
-    public static String getContractResponse(){
+    public static String execContract(){
         String bashExecutable = "C:\\Program Files\\Git\\git-bash.exe";
         String blochChainConfigFolder = "d:/blokchain/helloworld";
         String shAbsPath = "";
@@ -27,6 +27,7 @@ public class ContractUtils {
         String contractAddress = "0x5DD5e5CFf778058fd45D848d36F02d1b8560d7D7";
         String tempFolder = "D:\\blokchain_temp\\temp";
         java.nio.file.Path tempPath = Paths.get(tempFolder);
+        String result = "";
         try {
             java.nio.file.Path shFile = Files.createTempFile(tempPath,"sh", ".sh");
             shAbsPath = shFile.toFile().getAbsolutePath();
@@ -38,18 +39,25 @@ public class ContractUtils {
             FileProcessingUtils.createSHFile(shAbsPath, jsAbsPath, outFileAbsPath, blochChainConfigFolder);
             Process process = Runtime.getRuntime().exec(bashExecutable+ " " + shAbsPath);
             process.waitFor();
+            Files.deleteIfExists(Paths.get(shAbsPath));
+            Files.deleteIfExists(Paths.get(jsAbsPath));
         } catch (IOException | InterruptedException e) {
             e.printStackTrace();
         }
+        return getContractResponse(outFileAbsPath);
+    }
+
+    public static String getContractResponse(String outFileAbsPath){
         String result = "";
         try (InputStream input = new FileInputStream(outFileAbsPath)){
             Properties contractResult = new Properties();
             contractResult.load(input);
             result = contractResult.getProperty(CONTRACT_EXECUTION_RESULT);
+            Files.deleteIfExists(Paths.get(outFileAbsPath));
         } catch (IOException ex) {
             ex.printStackTrace();
         }
-        FileProcessingUtils.deleteFiles(shAbsPath, outFileAbsPath, jsAbsPath);
         return result;
     }
+
 }
