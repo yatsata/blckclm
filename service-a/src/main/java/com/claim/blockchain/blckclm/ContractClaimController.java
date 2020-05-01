@@ -15,6 +15,7 @@ import java.util.Map;
 @Singleton
 public class ContractClaimController {
 
+    private static final String testContract = "Hello World";
 
     @POST
     @Path("/claim")
@@ -23,12 +24,12 @@ public class ContractClaimController {
     public Map getClaimResult(HealthClaimRq request) {
         ContractUtils.processRequestData(request);
         Map map = new HashMap<>();
-        map.put(ContractUtils.CONTRACT_EXECUTION_RESULT, ContractUtils.execContract());
+        map.put(ContractUtils.CONTRACT_EXECUTION_RESULT, ContractUtils.execContract(testContract));
         return map;
     }
 
     public static void main(String[] args) {
-        System.out.println(ContractUtils.CONTRACT_EXECUTION_RESULT + ":" + ContractUtils.execContract());
+        System.out.println(ContractUtils.CONTRACT_EXECUTION_RESULT + ":" + ContractUtils.execContract(testContract));
     }
 
 }

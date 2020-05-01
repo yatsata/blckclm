@@ -17,13 +17,16 @@ public class ContractUtils {
         System.out.println(request.getSenderId());
     }
 
-    public static String execContract(){
+    public static String execContract(String contractName){
+        if (contractName == null || contractName ==""){
+            System.out.println("Contract name can't be empty");
+            return "";
+        }
         String bashExecutable = "C:\\Program Files\\Git\\git-bash.exe";
         String blochChainConfigFolder = "d:/blokchain/helloworld";
         String shAbsPath = "";
         String outFileAbsPath = "";
         String jsAbsPath = "";
-        String contractName = "HelloWorld";
         String contractAddress = "0x5DD5e5CFf778058fd45D848d36F02d1b8560d7D7";
         String tempFolder = "D:\\blokchain_temp\\temp";
         java.nio.file.Path tempPath = Paths.get(tempFolder);
