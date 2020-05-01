@@ -9,6 +9,7 @@ public class HealthClaimRq {
     private String insuredId;
     private String examinationId;
     private String examinationTopic;
+    private String examinationSubTopic;
     private String examinationPrice;
     private String examinationSummary;
     private Map<String, String> results;
@@ -51,6 +52,10 @@ public class HealthClaimRq {
     public String getExaminationTopic() { return examinationTopic; }
 
     public void setExaminationTopic(String examinationTopic) { this.examinationTopic = examinationTopic; }
+
+    public String getExaminationSubTopic() {  return examinationSubTopic; }
+
+    public void setExaminationSubTopic(String examinationSubTopic) { this.examinationSubTopic = examinationSubTopic; }
 
     public String getExaminationPrice() {
         return examinationPrice;
