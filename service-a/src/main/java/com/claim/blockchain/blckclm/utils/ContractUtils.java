@@ -17,7 +17,7 @@ public class ContractUtils {
         System.out.println(request.getSenderId());
     }
 
-    public static String execContract(String contractName){
+    public static String execContract(String contractName, String contractAddress){
         if (contractName == null || contractName ==""){
             System.out.println("Contract name can't be empty");
             return "";
@@ -27,7 +27,6 @@ public class ContractUtils {
         String shAbsPath = "";
         String outFileAbsPath = "";
         String jsAbsPath = "";
-        String contractAddress = "0x5DD5e5CFf778058fd45D848d36F02d1b8560d7D7";
         String tempFolder = "D:\\blokchain_temp\\temp";
         java.nio.file.Path tempPath = Paths.get(tempFolder);
         String result = "";

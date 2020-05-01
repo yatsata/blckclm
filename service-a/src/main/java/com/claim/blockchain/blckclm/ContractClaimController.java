@@ -16,6 +16,8 @@ import java.util.Map;
 public class ContractClaimController {
 
     private static final String testContract = "Hello World";
+    private static final String testContractAddress = "0x5DD5e5CFf778058fd45D848d36F02d1b8560d7D7";
+
 
     @POST
     @Path("/claim")
@@ -24,12 +26,12 @@ public class ContractClaimController {
     public Map getClaimResult(HealthClaimRq request) {
         ContractUtils.processRequestData(request);
         Map map = new HashMap<>();
-        map.put(ContractUtils.CONTRACT_EXECUTION_RESULT, ContractUtils.execContract(testContract));
+        map.put(ContractUtils.CONTRACT_EXECUTION_RESULT, ContractUtils.execContract(testContract, testContractAddress));
         return map;
     }
 
     public static void main(String[] args) {
-        System.out.println(ContractUtils.CONTRACT_EXECUTION_RESULT + ":" + ContractUtils.execContract(testContract));
+        System.out.println(ContractUtils.CONTRACT_EXECUTION_RESULT + ":" + ContractUtils.execContract(testContract, testContractAddress));
     }
 
 }
