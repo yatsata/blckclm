@@ -7,6 +7,7 @@ public class HealthClaimRq {
     private String senderId;
     private String insurerId;
     private String insuredId;
+    private String examinationId;
     private String examinationTopic;
     private String examinationPrice;
     private String examinationSummary;
@@ -35,6 +36,9 @@ public class HealthClaimRq {
     public void setInsuredId(String insuredId) {
         this.insuredId = insuredId;
     }
+    public String getExaminationId() { return examinationId; }
+
+    public void setExaminationId(String examinationId) { this.examinationId = examinationId; }
 
     public String getExaminationSummary() {
         return examinationSummary;
@@ -44,13 +48,9 @@ public class HealthClaimRq {
         this.examinationSummary = examinationSummary;
     }
 
-    public String getExaminationTopic() {
-        return examinationTopic;
-    }
+    public String getExaminationTopic() { return examinationTopic; }
 
-    public void setExaminationTopic(String examinationTopic) {
-        this.examinationTopic = examinationTopic;
-    }
+    public void setExaminationTopic(String examinationTopic) { this.examinationTopic = examinationTopic; }
 
     public String getExaminationPrice() {
         return examinationPrice;
