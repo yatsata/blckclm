@@ -2,8 +2,6 @@ package com.claim.blockchain.blckclm.utils;
 
 import java.io.FileWriter;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 
 public class FileProcessingUtils {
 
@@ -21,7 +19,8 @@ public class FileProcessingUtils {
         }
     }
 
-    public static void createJSFile(String jsFile, String contractName, String contractAddress, String result){
+    public static void createJSFile(String jsFile, String contractName, String contractAddress,
+                                    String contractArguments, String result){
         FileWriter writer = null;
         try {
             writer = new FileWriter(jsFile, true);
@@ -30,7 +29,7 @@ public class FileProcessingUtils {
             writer.write("module.exports = function() {\n");
             writer.write("  async function getContractResponse() {\n");
             writer.write("    let ins = await myContract.at(contract_address);\n");
-            writer.write("    let res = await ins.getMessage();\n");
+            writer.write("    let res = await ins.evaluate(" + contractArguments +  ");\n");
             writer.write("    console.log(\"" + result + ":\" + res.toString())\n");
             writer.write("  }\n");
             writer.write("  getContractResponse();\n");

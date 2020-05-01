@@ -17,7 +17,7 @@ public class ContractUtils {
         System.out.println(request.getMedicalResearcherId());
     }
 
-    public static String execContract(String contractName, String contractAddress){
+    public static String execContract(String contractName, String contractAddress, String contractArguments){
         if (contractName == null || contractName ==""){
             System.out.println("Contract name can't be empty");
             return "";
@@ -37,7 +37,8 @@ public class ContractUtils {
             java.nio.file.Path jsFile = Files.createTempFile(tempPath,"js", ".js");
             outFileAbsPath = outFile.toFile().getAbsolutePath();
             jsAbsPath = jsFile.toFile().getAbsolutePath();
-            FileProcessingUtils.createJSFile(jsAbsPath, contractName, contractAddress, CONTRACT_EXECUTION_RESULT);
+            FileProcessingUtils.createJSFile(jsAbsPath, contractName, contractAddress,
+                                             contractArguments, CONTRACT_EXECUTION_RESULT);
             FileProcessingUtils.createSHFile(shAbsPath, jsAbsPath, outFileAbsPath, blochChainConfigFolder);
             Process process = Runtime.getRuntime().exec(bashExecutable+ " " + shAbsPath);
             process.waitFor();
