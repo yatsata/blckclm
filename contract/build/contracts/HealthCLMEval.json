@@ -1,0 +1,2970 @@
+{
+  "contractName": "HealthCLMEval",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "internalType": "string",
+          "name": "medicalResearcherId",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "insurerId",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "insuredId",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "insuredBankAccount",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "examinationId",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "examinationTopic",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "examinationSubTopic",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "examinationPrice",
+          "type": "string"
+        },
+        {
+          "internalType": "string",
+          "name": "examinationSummary",
+          "type": "string"
+        }
+      ],
+      "name": "evaluate",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "string",
+              "name": "medicalResearcherId",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "insurerId",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "insuredId",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "insuredBankAccount",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "examinationId",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "examinationTopic",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "examinationSubTopic",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "examinationPrice",
+              "type": "string"
+            },
+            {
+              "internalType": "string",
+              "name": "examinationSummary",
+              "type": "string"
+            }
+          ],
+          "internalType": "struct HealthCLMEval.HealthRq",
+          "name": "recordData",
+          "type": "tuple"
+        }
+      ],
+      "name": "process",
+      "outputs": [
+        {
+          "internalType": "string",
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[{\"internalType\":\"string\",\"name\":\"medicalResearcherId\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"insurerId\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"insuredId\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"insuredBankAccount\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"examinationId\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"examinationTopic\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"examinationSubTopic\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"examinationPrice\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"examinationSummary\",\"type\":\"string\"}],\"name\":\"evaluate\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"},{\"constant\":true,\"inputs\":[{\"components\":[{\"internalType\":\"string\",\"name\":\"medicalResearcherId\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"insurerId\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"insuredId\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"insuredBankAccount\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"examinationId\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"examinationTopic\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"examinationSubTopic\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"examinationPrice\",\"type\":\"string\"},{\"internalType\":\"string\",\"name\":\"examinationSummary\",\"type\":\"string\"}],\"internalType\":\"struct HealthCLMEval.HealthRq\",\"name\":\"recordData\",\"type\":\"tuple\"}],\"name\":\"process\",\"outputs\":[{\"internalType\":\"string\",\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/C/Users/PC.PC-PC/IdeaProjects/blckclm/contract/contracts/HealthCLMEval.sol\":\"HealthCLMEval\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/C/Users/PC.PC-PC/IdeaProjects/blckclm/contract/contracts/HealthCLMEval.sol\":{\"keccak256\":\"0x5efdb7bf0712ca58bcaaad4e6487ec929f78507a653c2259db49b7826f1d5248\",\"urls\":[\"bzz-raw://3ed82d7b6b008dfbf656db91e229982d7c95ca460701a4d9a553df562992c4a7\",\"dweb:/ipfs/QmX1kb2At38EchaEeR5LBjmQydwyvoY6gZnfKsYMG2cvDz\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610737806100206000396000f3fe608060405234801561001057600080fd5b50600436106100365760003560e01c8063c6276ac61461003b578063f290bee31461006b575b600080fd5b610055600480360361005091908101906103c6565b61009b565b60405161006291906105de565b60405180910390f35b61008560048036036100809190810190610564565b610110565b60405161009291906105de565b60405180910390f35b60606100a561011e565b8a816000018190525089816020018190525088816040018190525087816060018190525082816101000181905250838160e00181905250858160a00181905250848160c0018190525086816080018190525061010081610110565b9150509998505050505050505050565b606081604001519050919050565b6040518061012001604052806060815260200160608152602001606081526020016060815260200160608152602001606081526020016060815260200160608152602001606081525090565b600082601f83011261017b57600080fd5b813561018e6101898261062d565b610600565b915080825260208301602083018583830111156101aa57600080fd5b6101b58382846106a1565b50505092915050565b600082601f8301126101cf57600080fd5b81356101e26101dd82610659565b610600565b915080825260208301602083018583830111156101fe57600080fd5b6102098382846106a1565b50505092915050565b6000610120828403121561022557600080fd5b610230610120610600565b9050600082013567ffffffffffffffff81111561024c57600080fd5b6102588482850161016a565b600083015250602082013567ffffffffffffffff81111561027857600080fd5b6102848482850161016a565b602083015250604082013567ffffffffffffffff8111156102a457600080fd5b6102b08482850161016a565b604083015250606082013567ffffffffffffffff8111156102d057600080fd5b6102dc8482850161016a565b606083015250608082013567ffffffffffffffff8111156102fc57600080fd5b6103088482850161016a565b60808301525060a082013567ffffffffffffffff81111561032857600080fd5b6103348482850161016a565b60a08301525060c082013567ffffffffffffffff81111561035457600080fd5b6103608482850161016a565b60c08301525060e082013567ffffffffffffffff81111561038057600080fd5b61038c8482850161016a565b60e08301525061010082013567ffffffffffffffff8111156103ad57600080fd5b6103b98482850161016a565b6101008301525092915050565b60008060008060008060008060006101208a8c0312156103e557600080fd5b60008a013567ffffffffffffffff8111156103ff57600080fd5b61040b8c828d016101be565b99505060208a013567ffffffffffffffff81111561042857600080fd5b6104348c828d016101be565b98505060408a013567ffffffffffffffff81111561045157600080fd5b61045d8c828d016101be565b97505060608a013567ffffffffffffffff81111561047a57600080fd5b6104868c828d016101be565b96505060808a013567ffffffffffffffff8111156104a357600080fd5b6104af8c828d016101be565b95505060a08a013567ffffffffffffffff8111156104cc57600080fd5b6104d88c828d016101be565b94505060c08a013567ffffffffffffffff8111156104f557600080fd5b6105018c828d016101be565b93505060e08a013567ffffffffffffffff81111561051e57600080fd5b61052a8c828d016101be565b9250506101008a013567ffffffffffffffff81111561054857600080fd5b6105548c828d016101be565b9150509295985092959850929598565b60006020828403121561057657600080fd5b600082013567ffffffffffffffff81111561059057600080fd5b61059c84828501610212565b91505092915050565b60006105b082610685565b6105ba8185610690565b93506105ca8185602086016106b0565b6105d3816106e3565b840191505092915050565b600060208201905081810360008301526105f881846105a5565b905092915050565b6000604051905081810181811067ffffffffffffffff8211171561062357600080fd5b8060405250919050565b600067ffffffffffffffff82111561064457600080fd5b601f19601f8301169050602081019050919050565b600067ffffffffffffffff82111561067057600080fd5b601f19601f8301169050602081019050919050565b600081519050919050565b600082825260208201905092915050565b82818337600083830152505050565b60005b838110156106ce5780820151818401526020810190506106b3565b838111156106dd576000848401525b50505050565b6000601f19601f830116905091905056fea365627a7a72315820e1ff457417317f0954e0180170c6387a9493dac69d04f36e89505515b11f31836c6578706572696d656e74616cf564736f6c63430005100040",
+  "deployedBytecode": "0x608060405234801561001057600080fd5b50600436106100365760003560e01c8063c6276ac61461003b578063f290bee31461006b575b600080fd5b610055600480360361005091908101906103c6565b61009b565b60405161006291906105de565b60405180910390f35b61008560048036036100809190810190610564565b610110565b60405161009291906105de565b60405180910390f35b60606100a561011e565b8a816000018190525089816020018190525088816040018190525087816060018190525082816101000181905250838160e00181905250858160a00181905250848160c0018190525086816080018190525061010081610110565b9150509998505050505050505050565b606081604001519050919050565b6040518061012001604052806060815260200160608152602001606081526020016060815260200160608152602001606081526020016060815260200160608152602001606081525090565b600082601f83011261017b57600080fd5b813561018e6101898261062d565b610600565b915080825260208301602083018583830111156101aa57600080fd5b6101b58382846106a1565b50505092915050565b600082601f8301126101cf57600080fd5b81356101e26101dd82610659565b610600565b915080825260208301602083018583830111156101fe57600080fd5b6102098382846106a1565b50505092915050565b6000610120828403121561022557600080fd5b610230610120610600565b9050600082013567ffffffffffffffff81111561024c57600080fd5b6102588482850161016a565b600083015250602082013567ffffffffffffffff81111561027857600080fd5b6102848482850161016a565b602083015250604082013567ffffffffffffffff8111156102a457600080fd5b6102b08482850161016a565b604083015250606082013567ffffffffffffffff8111156102d057600080fd5b6102dc8482850161016a565b606083015250608082013567ffffffffffffffff8111156102fc57600080fd5b6103088482850161016a565b60808301525060a082013567ffffffffffffffff81111561032857600080fd5b6103348482850161016a565b60a08301525060c082013567ffffffffffffffff81111561035457600080fd5b6103608482850161016a565b60c08301525060e082013567ffffffffffffffff81111561038057600080fd5b61038c8482850161016a565b60e08301525061010082013567ffffffffffffffff8111156103ad57600080fd5b6103b98482850161016a565b6101008301525092915050565b60008060008060008060008060006101208a8c0312156103e557600080fd5b60008a013567ffffffffffffffff8111156103ff57600080fd5b61040b8c828d016101be565b99505060208a013567ffffffffffffffff81111561042857600080fd5b6104348c828d016101be565b98505060408a013567ffffffffffffffff81111561045157600080fd5b61045d8c828d016101be565b97505060608a013567ffffffffffffffff81111561047a57600080fd5b6104868c828d016101be565b96505060808a013567ffffffffffffffff8111156104a357600080fd5b6104af8c828d016101be565b95505060a08a013567ffffffffffffffff8111156104cc57600080fd5b6104d88c828d016101be565b94505060c08a013567ffffffffffffffff8111156104f557600080fd5b6105018c828d016101be565b93505060e08a013567ffffffffffffffff81111561051e57600080fd5b61052a8c828d016101be565b9250506101008a013567ffffffffffffffff81111561054857600080fd5b6105548c828d016101be565b9150509295985092959850929598565b60006020828403121561057657600080fd5b600082013567ffffffffffffffff81111561059057600080fd5b61059c84828501610212565b91505092915050565b60006105b082610685565b6105ba8185610690565b93506105ca8185602086016106b0565b6105d3816106e3565b840191505092915050565b600060208201905081810360008301526105f881846105a5565b905092915050565b6000604051905081810181811067ffffffffffffffff8211171561062357600080fd5b8060405250919050565b600067ffffffffffffffff82111561064457600080fd5b601f19601f8301169050602081019050919050565b600067ffffffffffffffff82111561067057600080fd5b601f19601f8301169050602081019050919050565b600081519050919050565b600082825260208201905092915050565b82818337600083830152505050565b60005b838110156106ce5780820151818401526020810190506106b3565b838111156106dd576000848401525b50505050565b6000601f19601f830116905091905056fea365627a7a72315820e1ff457417317f0954e0180170c6387a9493dac69d04f36e89505515b11f31836c6578706572696d656e74616cf564736f6c63430005100040",
+  "sourceMap": "69:1344:0:-;;;96:26;8:9:-1;5:2;;;30:1;27;20:12;5:2;96:26:0;69:1344;;;;;;",
+  "deployedSourceMap": "69:1344:0:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;69:1344:0;;;;;;;;;;;;;;;;;;;;;;;;444:837;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;1287:124;;;;;;;;;;;;;;;;:::i;:::-;;;;;;;;;;;;;;;;444:837;786:13;810:18;;:::i;:::-;863:19;838:2;:22;;:44;;;;907:9;892:2;:12;;:24;;;;941:9;926:2;:12;;:24;;;;984:18;960:2;:21;;:42;;;;1036:18;1012:2;:21;;:42;;;;1086:16;1064:2;:19;;:38;;;;1134:16;1112:2;:19;;:38;;;;1185:19;1160:2;:22;;:44;;;;1233:13;1214:2;:16;;:32;;;;1263:11;1271:2;1263:7;:11::i;:::-;1256:18;;;444:837;;;;;;;;;;;:::o;1287:124::-;1352:13;1384:10;:20;;;1377:27;;1287:124;;;:::o;69:1344::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;:::o;6:434:-1:-;;104:3;97:4;89:6;85:17;81:27;71:2;;122:1;119;112:12;71:2;159:6;146:20;181:61;196:45;234:6;196:45;;;181:61;;;172:70;;262:6;255:5;248:21;298:4;290:6;286:17;331:4;324:5;320:16;366:3;357:6;352:3;348:16;345:25;342:2;;;383:1;380;373:12;342:2;393:41;427:6;422:3;417;393:41;;;64:376;;;;;;;;449:442;;551:3;544:4;536:6;532:17;528:27;518:2;;569:1;566;559:12;518:2;606:6;593:20;628:65;643:49;685:6;643:49;;;628:65;;;619:74;;713:6;706:5;699:21;749:4;741:6;737:17;782:4;775:5;771:16;817:3;808:6;803:3;799:16;796:25;793:2;;;834:1;831;824:12;793:2;844:41;878:6;873:3;868;844:41;;;511:380;;;;;;;;935:2414;;1048:6;1036:9;1031:3;1027:19;1023:32;1020:2;;;1068:1;1065;1058:12;1020:2;1086:22;1101:6;1086:22;;;1077:31;;1201:1;1190:9;1186:17;1173:31;1224:18;1216:6;1213:30;1210:2;;;1256:1;1253;1246:12;1210:2;1291:55;1342:3;1333:6;1322:9;1318:22;1291:55;;;1284:4;1277:5;1273:16;1266:81;1118:240;1441:2;1430:9;1426:18;1413:32;1465:18;1457:6;1454:30;1451:2;;;1497:1;1494;1487:12;1451:2;1532:55;1583:3;1574:6;1563:9;1559:22;1532:55;;;1525:4;1518:5;1514:16;1507:81;1368:231;1682:2;1671:9;1667:18;1654:32;1706:18;1698:6;1695:30;1692:2;;;1738:1;1735;1728:12;1692:2;1773:55;1824:3;1815:6;1804:9;1800:22;1773:55;;;1766:4;1759:5;1755:16;1748:81;1609:231;1932:2;1921:9;1917:18;1904:32;1956:18;1948:6;1945:30;1942:2;;;1988:1;1985;1978:12;1942:2;2023:55;2074:3;2065:6;2054:9;2050:22;2023:55;;;2016:4;2009:5;2005:16;1998:81;1850:240;2177:3;2166:9;2162:19;2149:33;2202:18;2194:6;2191:30;2188:2;;;2234:1;2231;2224:12;2188:2;2269:55;2320:3;2311:6;2300:9;2296:22;2269:55;;;2262:4;2255:5;2251:16;2244:81;2100:236;2426:3;2415:9;2411:19;2398:33;2451:18;2443:6;2440:30;2437:2;;;2483:1;2480;2473:12;2437:2;2518:55;2569:3;2560:6;2549:9;2545:22;2518:55;;;2511:4;2504:5;2500:16;2493:81;2346:239;2678:3;2667:9;2663:19;2650:33;2703:18;2695:6;2692:30;2689:2;;;2735:1;2732;2725:12;2689:2;2770:55;2821:3;2812:6;2801:9;2797:22;2770:55;;;2763:4;2756:5;2752:16;2745:81;2595:242;2927:3;2916:9;2912:19;2899:33;2952:18;2944:6;2941:30;2938:2;;;2984:1;2981;2974:12;2938:2;3019:55;3070:3;3061:6;3050:9;3046:22;3019:55;;;3012:4;3005:5;3001:16;2994:81;2847:239;3178:3;3167:9;3163:19;3150:33;3203:18;3195:6;3192:30;3189:2;;;3235:1;3232;3225:12;3189:2;3272:55;3323:3;3314:6;3303:9;3299:22;3272:55;;;3263:6;3256:5;3252:18;3245:83;3096:243;1014:2335;;;;;3356:2201;;;;;;;;;;3686:3;3674:9;3665:7;3661:23;3657:33;3654:2;;;3703:1;3700;3693:12;3654:2;3766:1;3755:9;3751:17;3738:31;3789:18;3781:6;3778:30;3775:2;;;3821:1;3818;3811:12;3775:2;3841:63;3896:7;3887:6;3876:9;3872:22;3841:63;;;3831:73;;3717:193;3969:2;3958:9;3954:18;3941:32;3993:18;3985:6;3982:30;3979:2;;;4025:1;4022;4015:12;3979:2;4045:63;4100:7;4091:6;4080:9;4076:22;4045:63;;;4035:73;;3920:194;4173:2;4162:9;4158:18;4145:32;4197:18;4189:6;4186:30;4183:2;;;4229:1;4226;4219:12;4183:2;4249:63;4304:7;4295:6;4284:9;4280:22;4249:63;;;4239:73;;4124:194;4377:2;4366:9;4362:18;4349:32;4401:18;4393:6;4390:30;4387:2;;;4433:1;4430;4423:12;4387:2;4453:63;4508:7;4499:6;4488:9;4484:22;4453:63;;;4443:73;;4328:194;4581:3;4570:9;4566:19;4553:33;4606:18;4598:6;4595:30;4592:2;;;4638:1;4635;4628:12;4592:2;4658:63;4713:7;4704:6;4693:9;4689:22;4658:63;;;4648:73;;4532:195;4786:3;4775:9;4771:19;4758:33;4811:18;4803:6;4800:30;4797:2;;;4843:1;4840;4833:12;4797:2;4863:63;4918:7;4909:6;4898:9;4894:22;4863:63;;;4853:73;;4737:195;4991:3;4980:9;4976:19;4963:33;5016:18;5008:6;5005:30;5002:2;;;5048:1;5045;5038:12;5002:2;5068:63;5123:7;5114:6;5103:9;5099:22;5068:63;;;5058:73;;4942:195;5196:3;5185:9;5181:19;5168:33;5221:18;5213:6;5210:30;5207:2;;;5253:1;5250;5243:12;5207:2;5273:63;5328:7;5319:6;5308:9;5304:22;5273:63;;;5263:73;;5147:195;5401:3;5390:9;5386:19;5373:33;5426:18;5418:6;5415:30;5412:2;;;5458:1;5455;5448:12;5412:2;5478:63;5533:7;5524:6;5513:9;5509:22;5478:63;;;5468:73;;5352:195;3648:1909;;;;;;;;;;;;5564:375;;5692:2;5680:9;5671:7;5667:23;5663:32;5660:2;;;5708:1;5705;5698:12;5660:2;5771:1;5760:9;5756:17;5743:31;5794:18;5786:6;5783:30;5780:2;;;5826:1;5823;5816:12;5780:2;5846:77;5915:7;5906:6;5895:9;5891:22;5846:77;;;5836:87;;5722:207;5654:285;;;;;5946:347;;6058:39;6091:5;6058:39;;;6109:71;6173:6;6168:3;6109:71;;;6102:78;;6185:52;6230:6;6225:3;6218:4;6211:5;6207:16;6185:52;;;6258:29;6280:6;6258:29;;;6253:3;6249:39;6242:46;;6038:255;;;;;;6300:301;;6438:2;6427:9;6423:18;6415:26;;6488:9;6482:4;6478:20;6474:1;6463:9;6459:17;6452:47;6513:78;6586:4;6577:6;6513:78;;;6505:86;;6409:192;;;;;6608:256;;6670:2;6664:9;6654:19;;6708:4;6700:6;6696:17;6807:6;6795:10;6792:22;6771:18;6759:10;6756:34;6753:62;6750:2;;;6828:1;6825;6818:12;6750:2;6848:10;6844:2;6837:22;6648:216;;;;;6871:318;;7011:18;7003:6;7000:30;6997:2;;;7043:1;7040;7033:12;6997:2;7110:4;7106:9;7099:4;7091:6;7087:17;7083:33;7075:41;;7174:4;7168;7164:15;7156:23;;6934:255;;;;7196:322;;7340:18;7332:6;7329:30;7326:2;;;7372:1;7369;7362:12;7326:2;7439:4;7435:9;7428:4;7420:6;7416:17;7412:33;7404:41;;7503:4;7497;7493:15;7485:23;;7263:255;;;;7525:122;;7619:5;7613:12;7603:22;;7584:63;;;;7655:163;;7770:6;7765:3;7758:19;7807:4;7802:3;7798:14;7783:29;;7751:67;;;;;7827:145;7908:6;7903:3;7898;7885:30;7964:1;7955:6;7950:3;7946:16;7939:27;7878:94;;;;7981:268;8046:1;8053:101;8067:6;8064:1;8061:13;8053:101;;;8143:1;8138:3;8134:11;8128:18;8124:1;8119:3;8115:11;8108:39;8089:2;8086:1;8082:10;8077:15;;8053:101;;;8169:6;8166:1;8163:13;8160:2;;;8234:1;8225:6;8220:3;8216:16;8209:27;8160:2;8030:219;;;;;8257:97;;8345:2;8341:7;8336:2;8329:5;8325:14;8321:28;8311:38;;8305:49;;;",
+  "source": "pragma solidity >= 0.5.0 < 0.7.0;\npragma experimental ABIEncoderV2;\n\ncontract HealthCLMEval {\n  constructor() public {\n  }\n   struct HealthRq{\n        string medicalResearcherId;\n        string insurerId;\n        string insuredId;\n        string insuredBankAccount;\n        string examinationId;\n        string examinationTopic;\n        string examinationSubTopic;\n        string examinationPrice;\n        string examinationSummary;\n    }\n\n    function evaluate(string memory medicalResearcherId, string memory insurerId, string memory insuredId,\n        string memory insuredBankAccount, string memory examinationId, string memory examinationTopic,\n        string memory examinationSubTopic, string memory examinationPrice,\n        string memory examinationSummary)public pure returns(string memory){\n        HealthRq memory rq;\n        rq.medicalResearcherId = medicalResearcherId;\n        rq.insurerId = insurerId;\n        rq.insuredId = insuredId;\n        rq.insuredBankAccount = insuredBankAccount;\n        rq.examinationSummary = examinationSummary;\n        rq.examinationPrice = examinationPrice;\n        rq.examinationTopic = examinationTopic;\n        rq.examinationSubTopic = examinationSubTopic;\n        rq.examinationId = examinationId;\n        return process(rq);\n    }\n\n    function process(HealthRq memory recordData) public pure returns(string memory) {\n        return recordData.insuredId;\n    }\n}\n",
+  "sourcePath": "C:\\Users\\PC.PC-PC\\IdeaProjects\\blckclm\\contract\\contracts\\HealthCLMEval.sol",
+  "ast": {
+    "absolutePath": "/C/Users/PC.PC-PC/IdeaProjects/blckclm/contract/contracts/HealthCLMEval.sol",
+    "exportedSymbols": {
+      "HealthCLMEval": [
+        122
+      ]
+    },
+    "id": 123,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:33:0"
+      },
+      {
+        "id": 2,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "34:33:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 122,
+        "linearizedBaseContracts": [
+          122
+        ],
+        "name": "HealthCLMEval",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 5,
+              "nodeType": "Block",
+              "src": "117:5:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 6,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "107:2:0"
+            },
+            "returnParameters": {
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "117:0:0"
+            },
+            "scope": 122,
+            "src": "96:26:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "HealthCLMEval.HealthRq",
+            "id": 25,
+            "members": [
+              {
+                "constant": false,
+                "id": 8,
+                "name": "medicalResearcherId",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "151:26:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 7,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "151:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 10,
+                "name": "insurerId",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "187:16:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 9,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "187:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 12,
+                "name": "insuredId",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "213:16:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 11,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "213:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 14,
+                "name": "insuredBankAccount",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "239:25:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 13,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "239:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 16,
+                "name": "examinationId",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "274:20:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 15,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "274:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 18,
+                "name": "examinationTopic",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "304:23:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 17,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "304:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 20,
+                "name": "examinationSubTopic",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "337:26:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 19,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "337:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 22,
+                "name": "examinationPrice",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "373:23:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 21,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "373:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 24,
+                "name": "examinationSummary",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "406:25:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 23,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "406:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "HealthRq",
+            "nodeType": "StructDefinition",
+            "scope": 122,
+            "src": "126:312:0",
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 109,
+              "nodeType": "Block",
+              "src": "800:481:0",
+              "statements": [
+                {
+                  "assignments": [
+                    49
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 49,
+                      "name": "rq",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 109,
+                      "src": "810:18:0",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                        "typeString": "struct HealthCLMEval.HealthRq"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 48,
+                        "name": "HealthRq",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 25,
+                        "src": "810:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_storage_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 50,
+                  "initialValue": null,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "810:18:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 55,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 51,
+                        "name": "rq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "838:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      },
+                      "id": 53,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "medicalResearcherId",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 8,
+                      "src": "838:22:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 54,
+                      "name": "medicalResearcherId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 27,
+                      "src": "863:19:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "838:44:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 56,
+                  "nodeType": "ExpressionStatement",
+                  "src": "838:44:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 61,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 57,
+                        "name": "rq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "892:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      },
+                      "id": 59,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "insurerId",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10,
+                      "src": "892:12:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 60,
+                      "name": "insurerId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 29,
+                      "src": "907:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "892:24:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 62,
+                  "nodeType": "ExpressionStatement",
+                  "src": "892:24:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 67,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 63,
+                        "name": "rq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "926:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      },
+                      "id": 65,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "insuredId",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 12,
+                      "src": "926:12:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 66,
+                      "name": "insuredId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 31,
+                      "src": "941:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "926:24:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 68,
+                  "nodeType": "ExpressionStatement",
+                  "src": "926:24:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 73,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 69,
+                        "name": "rq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "960:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      },
+                      "id": 71,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "insuredBankAccount",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 14,
+                      "src": "960:21:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 72,
+                      "name": "insuredBankAccount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 33,
+                      "src": "984:18:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "960:42:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 74,
+                  "nodeType": "ExpressionStatement",
+                  "src": "960:42:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 79,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 75,
+                        "name": "rq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "1012:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      },
+                      "id": 77,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "examinationSummary",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 24,
+                      "src": "1012:21:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 78,
+                      "name": "examinationSummary",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 43,
+                      "src": "1036:18:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "1012:42:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 80,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1012:42:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 85,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 81,
+                        "name": "rq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "1064:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      },
+                      "id": 83,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "examinationPrice",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 22,
+                      "src": "1064:19:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 84,
+                      "name": "examinationPrice",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 41,
+                      "src": "1086:16:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "1064:38:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 86,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1064:38:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 91,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 87,
+                        "name": "rq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "1112:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      },
+                      "id": 89,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "examinationTopic",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 18,
+                      "src": "1112:19:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 90,
+                      "name": "examinationTopic",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 37,
+                      "src": "1134:16:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "1112:38:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 92,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1112:38:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 97,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 93,
+                        "name": "rq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "1160:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      },
+                      "id": 95,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "examinationSubTopic",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 20,
+                      "src": "1160:22:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 96,
+                      "name": "examinationSubTopic",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 39,
+                      "src": "1185:19:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "1160:44:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 98,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1160:44:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 103,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 99,
+                        "name": "rq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "1214:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      },
+                      "id": 101,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "examinationId",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 16,
+                      "src": "1214:16:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 102,
+                      "name": "examinationId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 35,
+                      "src": "1233:13:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "1214:32:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 104,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1214:32:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 106,
+                        "name": "rq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "1271:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      ],
+                      "id": 105,
+                      "name": "process",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 121,
+                      "src": "1263:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_HealthRq_$25_memory_ptr_$returns$_t_string_memory_ptr_$",
+                        "typeString": "function (struct HealthCLMEval.HealthRq memory) pure returns (string memory)"
+                      }
+                    },
+                    "id": 107,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1263:11:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory_ptr",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "functionReturnParameters": 47,
+                  "id": 108,
+                  "nodeType": "Return",
+                  "src": "1256:18:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 110,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "evaluate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 44,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 27,
+                  "name": "medicalResearcherId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 110,
+                  "src": "462:33:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 26,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "462:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 29,
+                  "name": "insurerId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 110,
+                  "src": "497:23:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 28,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "497:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31,
+                  "name": "insuredId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 110,
+                  "src": "522:23:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 30,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "522:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 33,
+                  "name": "insuredBankAccount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 110,
+                  "src": "555:32:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 32,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "555:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 35,
+                  "name": "examinationId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 110,
+                  "src": "589:27:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 34,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "589:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 37,
+                  "name": "examinationTopic",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 110,
+                  "src": "618:30:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 36,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "618:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 39,
+                  "name": "examinationSubTopic",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 110,
+                  "src": "658:33:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 38,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "658:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41,
+                  "name": "examinationPrice",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 110,
+                  "src": "693:30:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 40,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "693:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43,
+                  "name": "examinationSummary",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 110,
+                  "src": "733:32:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 42,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "733:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "461:305:0"
+            },
+            "returnParameters": {
+              "id": 47,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 110,
+                  "src": "786:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 45,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "786:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "785:15:0"
+            },
+            "scope": 122,
+            "src": "444:837:0",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 120,
+              "nodeType": "Block",
+              "src": "1367:44:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 117,
+                      "name": "recordData",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 112,
+                      "src": "1384:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                        "typeString": "struct HealthCLMEval.HealthRq memory"
+                      }
+                    },
+                    "id": 118,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "insuredId",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 12,
+                    "src": "1384:20:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "functionReturnParameters": 116,
+                  "id": 119,
+                  "nodeType": "Return",
+                  "src": "1377:27:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 121,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "process",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 113,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 112,
+                  "name": "recordData",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 121,
+                  "src": "1304:26:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                    "typeString": "struct HealthCLMEval.HealthRq"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 111,
+                    "name": "HealthRq",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 25,
+                    "src": "1304:8:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_HealthRq_$25_storage_ptr",
+                      "typeString": "struct HealthCLMEval.HealthRq"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1303:28:0"
+            },
+            "returnParameters": {
+              "id": 116,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 115,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 121,
+                  "src": "1352:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 114,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1352:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1351:15:0"
+            },
+            "scope": 122,
+            "src": "1287:124:0",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 123,
+        "src": "69:1344:0"
+      }
+    ],
+    "src": "0:1414:0"
+  },
+  "legacyAST": {
+    "absolutePath": "/C/Users/PC.PC-PC/IdeaProjects/blckclm/contract/contracts/HealthCLMEval.sol",
+    "exportedSymbols": {
+      "HealthCLMEval": [
+        122
+      ]
+    },
+    "id": 123,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 1,
+        "literals": [
+          "solidity",
+          ">=",
+          "0.5",
+          ".0",
+          "<",
+          "0.7",
+          ".0"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:33:0"
+      },
+      {
+        "id": 2,
+        "literals": [
+          "experimental",
+          "ABIEncoderV2"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "34:33:0"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 122,
+        "linearizedBaseContracts": [
+          122
+        ],
+        "name": "HealthCLMEval",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "body": {
+              "id": 5,
+              "nodeType": "Block",
+              "src": "117:5:0",
+              "statements": []
+            },
+            "documentation": null,
+            "id": 6,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 3,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "107:2:0"
+            },
+            "returnParameters": {
+              "id": 4,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "117:0:0"
+            },
+            "scope": 122,
+            "src": "96:26:0",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "canonicalName": "HealthCLMEval.HealthRq",
+            "id": 25,
+            "members": [
+              {
+                "constant": false,
+                "id": 8,
+                "name": "medicalResearcherId",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "151:26:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 7,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "151:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 10,
+                "name": "insurerId",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "187:16:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 9,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "187:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 12,
+                "name": "insuredId",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "213:16:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 11,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "213:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 14,
+                "name": "insuredBankAccount",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "239:25:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 13,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "239:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 16,
+                "name": "examinationId",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "274:20:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 15,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "274:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 18,
+                "name": "examinationTopic",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "304:23:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 17,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "304:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 20,
+                "name": "examinationSubTopic",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "337:26:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 19,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "337:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 22,
+                "name": "examinationPrice",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "373:23:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 21,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "373:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              },
+              {
+                "constant": false,
+                "id": 24,
+                "name": "examinationSummary",
+                "nodeType": "VariableDeclaration",
+                "scope": 25,
+                "src": "406:25:0",
+                "stateVariable": false,
+                "storageLocation": "default",
+                "typeDescriptions": {
+                  "typeIdentifier": "t_string_storage_ptr",
+                  "typeString": "string"
+                },
+                "typeName": {
+                  "id": 23,
+                  "name": "string",
+                  "nodeType": "ElementaryTypeName",
+                  "src": "406:6:0",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_storage_ptr",
+                    "typeString": "string"
+                  }
+                },
+                "value": null,
+                "visibility": "internal"
+              }
+            ],
+            "name": "HealthRq",
+            "nodeType": "StructDefinition",
+            "scope": 122,
+            "src": "126:312:0",
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 109,
+              "nodeType": "Block",
+              "src": "800:481:0",
+              "statements": [
+                {
+                  "assignments": [
+                    49
+                  ],
+                  "declarations": [
+                    {
+                      "constant": false,
+                      "id": 49,
+                      "name": "rq",
+                      "nodeType": "VariableDeclaration",
+                      "scope": 109,
+                      "src": "810:18:0",
+                      "stateVariable": false,
+                      "storageLocation": "memory",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                        "typeString": "struct HealthCLMEval.HealthRq"
+                      },
+                      "typeName": {
+                        "contractScope": null,
+                        "id": 48,
+                        "name": "HealthRq",
+                        "nodeType": "UserDefinedTypeName",
+                        "referencedDeclaration": 25,
+                        "src": "810:8:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_storage_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq"
+                        }
+                      },
+                      "value": null,
+                      "visibility": "internal"
+                    }
+                  ],
+                  "id": 50,
+                  "initialValue": null,
+                  "nodeType": "VariableDeclarationStatement",
+                  "src": "810:18:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 55,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 51,
+                        "name": "rq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "838:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      },
+                      "id": 53,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "medicalResearcherId",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 8,
+                      "src": "838:22:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 54,
+                      "name": "medicalResearcherId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 27,
+                      "src": "863:19:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "838:44:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 56,
+                  "nodeType": "ExpressionStatement",
+                  "src": "838:44:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 61,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 57,
+                        "name": "rq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "892:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      },
+                      "id": 59,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "insurerId",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 10,
+                      "src": "892:12:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 60,
+                      "name": "insurerId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 29,
+                      "src": "907:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "892:24:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 62,
+                  "nodeType": "ExpressionStatement",
+                  "src": "892:24:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 67,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 63,
+                        "name": "rq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "926:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      },
+                      "id": 65,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "insuredId",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 12,
+                      "src": "926:12:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 66,
+                      "name": "insuredId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 31,
+                      "src": "941:9:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "926:24:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 68,
+                  "nodeType": "ExpressionStatement",
+                  "src": "926:24:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 73,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 69,
+                        "name": "rq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "960:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      },
+                      "id": 71,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "insuredBankAccount",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 14,
+                      "src": "960:21:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 72,
+                      "name": "insuredBankAccount",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 33,
+                      "src": "984:18:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "960:42:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 74,
+                  "nodeType": "ExpressionStatement",
+                  "src": "960:42:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 79,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 75,
+                        "name": "rq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "1012:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      },
+                      "id": 77,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "examinationSummary",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 24,
+                      "src": "1012:21:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 78,
+                      "name": "examinationSummary",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 43,
+                      "src": "1036:18:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "1012:42:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 80,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1012:42:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 85,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 81,
+                        "name": "rq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "1064:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      },
+                      "id": 83,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "examinationPrice",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 22,
+                      "src": "1064:19:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 84,
+                      "name": "examinationPrice",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 41,
+                      "src": "1086:16:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "1064:38:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 86,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1064:38:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 91,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 87,
+                        "name": "rq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "1112:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      },
+                      "id": 89,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "examinationTopic",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 18,
+                      "src": "1112:19:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 90,
+                      "name": "examinationTopic",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 37,
+                      "src": "1134:16:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "1112:38:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 92,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1112:38:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 97,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 93,
+                        "name": "rq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "1160:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      },
+                      "id": 95,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "examinationSubTopic",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 20,
+                      "src": "1160:22:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 96,
+                      "name": "examinationSubTopic",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 39,
+                      "src": "1185:19:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "1160:44:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 98,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1160:44:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 103,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "expression": {
+                        "argumentTypes": null,
+                        "id": 99,
+                        "name": "rq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "1214:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      },
+                      "id": 101,
+                      "isConstant": false,
+                      "isLValue": true,
+                      "isPure": false,
+                      "lValueRequested": true,
+                      "memberName": "examinationId",
+                      "nodeType": "MemberAccess",
+                      "referencedDeclaration": 16,
+                      "src": "1214:16:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "id": 102,
+                      "name": "examinationId",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 35,
+                      "src": "1233:13:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_string_memory_ptr",
+                        "typeString": "string memory"
+                      }
+                    },
+                    "src": "1214:32:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "id": 104,
+                  "nodeType": "ExpressionStatement",
+                  "src": "1214:32:0"
+                },
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "arguments": [
+                      {
+                        "argumentTypes": null,
+                        "id": 106,
+                        "name": "rq",
+                        "nodeType": "Identifier",
+                        "overloadedDeclarations": [],
+                        "referencedDeclaration": 49,
+                        "src": "1271:2:0",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      }
+                    ],
+                    "expression": {
+                      "argumentTypes": [
+                        {
+                          "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                          "typeString": "struct HealthCLMEval.HealthRq memory"
+                        }
+                      ],
+                      "id": 105,
+                      "name": "process",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 121,
+                      "src": "1263:7:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_function_internal_pure$_t_struct$_HealthRq_$25_memory_ptr_$returns$_t_string_memory_ptr_$",
+                        "typeString": "function (struct HealthCLMEval.HealthRq memory) pure returns (string memory)"
+                      }
+                    },
+                    "id": 107,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "kind": "functionCall",
+                    "lValueRequested": false,
+                    "names": [],
+                    "nodeType": "FunctionCall",
+                    "src": "1263:11:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory_ptr",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "functionReturnParameters": 47,
+                  "id": 108,
+                  "nodeType": "Return",
+                  "src": "1256:18:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 110,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "evaluate",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 44,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 27,
+                  "name": "medicalResearcherId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 110,
+                  "src": "462:33:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 26,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "462:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 29,
+                  "name": "insurerId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 110,
+                  "src": "497:23:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 28,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "497:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 31,
+                  "name": "insuredId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 110,
+                  "src": "522:23:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 30,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "522:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 33,
+                  "name": "insuredBankAccount",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 110,
+                  "src": "555:32:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 32,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "555:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 35,
+                  "name": "examinationId",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 110,
+                  "src": "589:27:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 34,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "589:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 37,
+                  "name": "examinationTopic",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 110,
+                  "src": "618:30:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 36,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "618:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 39,
+                  "name": "examinationSubTopic",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 110,
+                  "src": "658:33:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 38,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "658:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 41,
+                  "name": "examinationPrice",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 110,
+                  "src": "693:30:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 40,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "693:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                },
+                {
+                  "constant": false,
+                  "id": 43,
+                  "name": "examinationSummary",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 110,
+                  "src": "733:32:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 42,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "733:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "461:305:0"
+            },
+            "returnParameters": {
+              "id": 47,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 46,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 110,
+                  "src": "786:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 45,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "786:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "785:15:0"
+            },
+            "scope": 122,
+            "src": "444:837:0",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 120,
+              "nodeType": "Block",
+              "src": "1367:44:0",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "expression": {
+                      "argumentTypes": null,
+                      "id": 117,
+                      "name": "recordData",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 112,
+                      "src": "1384:10:0",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                        "typeString": "struct HealthCLMEval.HealthRq memory"
+                      }
+                    },
+                    "id": 118,
+                    "isConstant": false,
+                    "isLValue": true,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "memberName": "insuredId",
+                    "nodeType": "MemberAccess",
+                    "referencedDeclaration": 12,
+                    "src": "1384:20:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_memory",
+                      "typeString": "string memory"
+                    }
+                  },
+                  "functionReturnParameters": 116,
+                  "id": 119,
+                  "nodeType": "Return",
+                  "src": "1377:27:0"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 121,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "process",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 113,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 112,
+                  "name": "recordData",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 121,
+                  "src": "1304:26:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_struct$_HealthRq_$25_memory_ptr",
+                    "typeString": "struct HealthCLMEval.HealthRq"
+                  },
+                  "typeName": {
+                    "contractScope": null,
+                    "id": 111,
+                    "name": "HealthRq",
+                    "nodeType": "UserDefinedTypeName",
+                    "referencedDeclaration": 25,
+                    "src": "1304:8:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_struct$_HealthRq_$25_storage_ptr",
+                      "typeString": "struct HealthCLMEval.HealthRq"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1303:28:0"
+            },
+            "returnParameters": {
+              "id": 116,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 115,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 121,
+                  "src": "1352:13:0",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 114,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "1352:6:0",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "1351:15:0"
+            },
+            "scope": 122,
+            "src": "1287:124:0",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 123,
+        "src": "69:1344:0"
+      }
+    ],
+    "src": "0:1414:0"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x8b19202841E6C3ebf56c805634FaBcA04823F796",
+      "transactionHash": "0xa2e35b27f3d5ff5da831acaa8a4365ec88e880e06a9865c40f75af52a2141f29"
+    }
+  },
+  "schemaVersion": "3.1.0",
+  "updatedAt": "2020-05-01T17:02:07.064Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
