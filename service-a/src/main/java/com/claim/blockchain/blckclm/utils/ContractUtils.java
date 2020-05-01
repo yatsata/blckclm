@@ -14,7 +14,7 @@ public class ContractUtils {
     public static final String CONTRACT_EXECUTION_RESULT = "CONTRACT_EXECUTION_RESULT";
 
     public static void processRequestData(HealthClaimRq request){
-        System.out.println(request.getSenderId());
+        System.out.println(request.getMedicalResearcherId());
     }
 
     public static String execContract(String contractName, String contractAddress){

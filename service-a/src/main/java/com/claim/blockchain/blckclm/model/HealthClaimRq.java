@@ -4,9 +4,10 @@ import java.util.Map;
 
 public class HealthClaimRq {
 
-    private String senderId;
+    private String medicalResearcherId;
     private String insurerId;
     private String insuredId;
+    private String insuredBankAccount;
     private String examinationId;
     private String examinationTopic;
     private String examinationSubTopic;
@@ -14,13 +15,9 @@ public class HealthClaimRq {
     private String examinationSummary;
     private Map<String, String> results;
 
-    public String getSenderId() {
-        return senderId;
-    }
+    public String getMedicalResearcherId() { return medicalResearcherId; }
 
-    public void setSenderId(String senderId) {
-        this.senderId = senderId;
-    }
+    public void setMedicalResearcherId(String medicalResearcherId) { this.medicalResearcherId = medicalResearcherId; }
 
     public String getInsurerId() {
         return insurerId;
@@ -37,6 +34,11 @@ public class HealthClaimRq {
     public void setInsuredId(String insuredId) {
         this.insuredId = insuredId;
     }
+
+    public String getInsuredBankAccount() { return insuredBankAccount; }
+
+    public void setInsuredBankAccount(String insuredBankAccount) { this.insuredBankAccount = insuredBankAccount; }
+
     public String getExaminationId() { return examinationId; }
 
     public void setExaminationId(String examinationId) { this.examinationId = examinationId; }

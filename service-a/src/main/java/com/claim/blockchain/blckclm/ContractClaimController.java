@@ -15,9 +15,8 @@ import java.util.Map;
 @Singleton
 public class ContractClaimController {
 
-    private static final String testContract = "Hello World";
+    private static final String testContract = "HealthCLMEval";
     private static final String testContractAddress = "0x5DD5e5CFf778058fd45D848d36F02d1b8560d7D7";
-
 
     @POST
     @Path("/claim")
