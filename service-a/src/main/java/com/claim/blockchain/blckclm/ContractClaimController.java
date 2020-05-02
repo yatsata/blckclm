@@ -38,7 +38,7 @@ public class ContractClaimController {
 
     public static void main(String[] args) {
         System.out.println(ContractUtils.CONTRACT_EXECUTION_RESULT + ":" +
-                           ContractUtils.execContract(testContract, testContractAddress, "1, 2, 3, 4, 5, 6, 7, 8, 9"));
+                           ContractUtils.execContract(testContract, testContractAddress, "10000001, 2, 3, 4, 5, 6, 7, 8, 9"));
     }
 
 }
