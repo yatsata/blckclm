@@ -16,7 +16,7 @@ contract HealthCLMEval {
 
     function evaluate(string memory medicalResearcherId,string memory insurerId,  string memory insuredId, string memory insuredBankAccount,
         string memory examinationId, string memory examinationTopic, string memory examinationSubTopic, string memory examinationPrice,
-        string memory examinationSummary)public pure returns(string memory){
+        string memory examinationSummary)public returns(string memory){
         HealthRq memory rq;
         rq.medicalResearcherId = medicalResearcherId;
         rq.insurerId = insurerId;
@@ -30,7 +30,7 @@ contract HealthCLMEval {
         return process(rq);
     }
 
-    function process(HealthRq memory recordData) public pure returns(string memory) {
+    function process(HealthRq memory recordData) public returns(string memory) {
         string memory researcherId = "10000001";
         string memory insuredId = "20000001";
         string memory examinationTopic = "HLT_TST";
@@ -49,7 +49,7 @@ contract HealthCLMEval {
         keccak256(abi.encodePacked(recordData.examinationSummary)) == keccak256(abi.encodePacked(examinationSummaryPositive))){
             return "No payment for positive result on positive results for SEX_DIS";
         }
-        string memory response = "Claim_Evaluation=FOR_PAYMENT\nInsured_bank_account=";
+        string memory response = "Claim_Evaluation:FOR_PAYMENT";
         return string(abi.encodePacked(response, recordData.insuredBankAccount));
     }
 }
