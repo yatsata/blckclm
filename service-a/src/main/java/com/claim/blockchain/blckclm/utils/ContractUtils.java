@@ -17,7 +17,8 @@ public class ContractUtils {
         System.out.println(request.getMedicalResearcherId());
     }
 
-    public static String execContract(String contractName, String contractAddress, String contractArguments){
+    public static String execContract(String contractName, String contractAddress, String callerId,
+                                      String contractArguments){
         if (contractName == null || contractName ==""){
             System.out.println("Contract name can't be empty");
             return "";
