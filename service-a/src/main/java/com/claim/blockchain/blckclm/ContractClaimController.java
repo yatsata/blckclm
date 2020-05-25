@@ -20,26 +20,26 @@ public class ContractClaimController {
     @Path("/claim")
     @Consumes("application/json")
     @Produces("application/json")
-    public Map getClaimResult(HealthClaimRq request, @QueryParam(value="callerId") String callerId,
-                              @QueryParam(value="contractId") String contractId) {
+    public String getClaimResult(HealthClaimRq request,
+                              @QueryParam(value="callerId") String callerId,
+                              @QueryParam(value="contractName") String contractName,
+                              @QueryParam(value="contractAddress") String contractAddress) {
         ContractUtils.processRequestData(request);
-        Map map = new HashMap<>();
+        String gas = "50894";
         String contractArguments = request.getMedicalResearcherId() + separator + request.getInsurerId() +
                                    request.getInsuredId() + separator + request.getInsuredBankAccount() +
                                    request.getExaminationId() + separator + request.getExaminationTopic() +
                                    request.getExaminationSubTopic() + separator + request.getExaminationPrice() +
                                    request.getExaminationSummary();
-        map.put(ContractUtils.CONTRACT_EXECUTION_RESULT, ContractUtils.execContract(contractId, callerId,
-                                                                                    callerId, contractArguments));
-        return map;
+        return ContractUtils.execContract(contractName, contractAddress,callerId, contractArguments, gas);
     }
 
     public static void main(String[] args) {
-        System.out.println(ContractUtils.CONTRACT_EXECUTION_RESULT + ":" +
-                           ContractUtils.execContract("HealthCLMEval",
-                                       "0x8b19202841E6C3ebf56c805634FaBcA04823F796",
+        System.out.println(ContractUtils.execContract("HealthCLMEval",
+                                       "0xB9569aaA9eb1b13a9053f844da60002b624B3568",
                                               "0xa70A7F1D913E6d039e33CfD99f7be6007a75b5Fd",
-                                    "10000002, 2, 3, 4, 5, 6, 7, 8, 9"));
+                                                 "\"10000002\", \"2\", \"20000001\", \"468895565\", \"5\", \"HLT_TST\", \"SEX_DIS\", \"8\", \"9\"",
+                                                        "50894"));
     }
 
 }

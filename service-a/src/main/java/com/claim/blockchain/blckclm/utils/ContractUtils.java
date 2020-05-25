@@ -2,25 +2,24 @@ package com.claim.blockchain.blckclm.utils;
 
 import com.claim.blockchain.blckclm.model.HealthClaimRq;
 
-import java.io.FileInputStream;
 import java.io.IOException;
-import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.util.Properties;
 
 public class ContractUtils {
-
-    public static final String CONTRACT_EXECUTION_RESULT = "CONTRACT_EXECUTION_RESULT";
 
     public static void processRequestData(HealthClaimRq request){
         System.out.println(request.getMedicalResearcherId());
     }
 
-    public static String execContract(String contractName, String contractAddress, String callerId,
-                                      String contractArguments){
+    public static String execContract(String contractName, String contractAddress,
+                                      String callerId, String contractArguments, String gas){
         if (contractName == null || contractName ==""){
-            System.out.println("Contract name can't be empty");
+            System.out.println("contractName can't be empty");
+            return "";
+        }
+        if (callerId == null || callerId ==""){
+            System.out.println("callerId can't be empty");
             return "";
         }
         String bashExecutable = "C:\\Program Files\\Git\\git-bash.exe";
@@ -38,8 +37,8 @@ public class ContractUtils {
             java.nio.file.Path jsFile = Files.createTempFile(tempPath,"js", ".js");
             outFileAbsPath = outFile.toFile().getAbsolutePath();
             jsAbsPath = jsFile.toFile().getAbsolutePath();
-            FileProcessingUtils.createJSFile(jsAbsPath, contractName, contractAddress,
-                                             contractArguments, CONTRACT_EXECUTION_RESULT);
+            FileProcessingUtils.createJSFile(jsAbsPath, contractName, contractAddress, callerId,
+                                             contractArguments, gas);
             FileProcessingUtils.createSHFile(shAbsPath, jsAbsPath, outFileAbsPath, blochChainConfigFolder);
             Process process = Runtime.getRuntime().exec(bashExecutable+ " " + shAbsPath);
             process.waitFor();
@@ -55,12 +54,10 @@ public class ContractUtils {
 
     public static String getContractResponse(String outFileAbsPath){
         String result = "";
-        try (InputStream input = new FileInputStream(outFileAbsPath)){
-            Properties contractResult = new Properties();
-            contractResult.load(input);
-            result = contractResult.getProperty(CONTRACT_EXECUTION_RESULT);
-        } catch (IOException ex) {
-            ex.printStackTrace();
+        try {
+            result = new String(Files.readAllBytes(Paths.get(outFileAbsPath)));
+        } catch (IOException e) {
+            e.printStackTrace();
         }
         return result;
     }
