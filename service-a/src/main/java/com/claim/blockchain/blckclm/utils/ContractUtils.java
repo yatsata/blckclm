@@ -23,7 +23,7 @@ public class ContractUtils {
             return "";
         }
         String bashExecutable = "C:\\Program Files\\Git\\git-bash.exe";
-        String blochChainConfigFolder = "d:/blokchain/helloworld";
+        String blochChainConfigFolder = "C:/Users/PC.PC-PC/IdeaProjects/blckclm/contract";
         String shAbsPath = "";
         String outFileAbsPath = "";
         String jsAbsPath = "";

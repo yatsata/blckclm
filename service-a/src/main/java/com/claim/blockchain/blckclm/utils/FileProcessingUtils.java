@@ -24,12 +24,10 @@ public class FileProcessingUtils {
         FileWriter writer = null;
         try {
             writer = new FileWriter(jsFile, true);
-            writer.write("var myContract = artifacts.require('" + contractName + "');\n");
-            writer.write("var contract_address = '" + contractAddress + "';\n");
             writer.write("module.exports = function() {\n");
             writer.write("  async function getContractResponse() {\n");
-            writer.write("    let ins = await myContract.at(contract_address);\n");
-            writer.write("    let res = await ins.evaluate("+contractArguments+", {from: \""+callerId +"\", gas: \"" + gas +"\"});\n");
+            writer.write("    const instance = await " + contractName + ".deployed()\n");
+            writer.write("    let res = await instance.evaluate("+contractArguments+", {from: \""+callerId +"\", gas: \"" + gas +"\"});\n");
             writer.write("    console.log(res.toString())\n");
             writer.write("  }\n");
             writer.write("  getContractResponse();\n");

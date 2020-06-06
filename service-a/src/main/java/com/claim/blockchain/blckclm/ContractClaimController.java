@@ -15,6 +15,7 @@ import java.util.Map;
 @Singleton
 public class ContractClaimController {
     private static final String separator = ", ";
+    private static final String quote = "\"";
 
     @POST
     @Path("/claim")
@@ -26,11 +27,15 @@ public class ContractClaimController {
                               @QueryParam(value="contractAddress") String contractAddress) {
         ContractUtils.processRequestData(request);
         String gas = "50894";
-        String contractArguments = request.getMedicalResearcherId() + separator + request.getInsurerId() +
-                                   request.getInsuredId() + separator + request.getInsuredBankAccount() +
-                                   request.getExaminationId() + separator + request.getExaminationTopic() +
-                                   request.getExaminationSubTopic() + separator + request.getExaminationPrice() +
-                                   request.getExaminationSummary();
+        String contractArguments = quote+request.getMedicalResearcherId()+quote+separator+
+                                   quote+request.getInsurerId()+quote+separator+
+                                   quote+request.getInsuredId()+quote+separator+
+                                   quote+request.getInsuredBankAccount()+quote+separator+
+                                   quote+request.getExaminationId()+quote+separator+
+                                   quote+request.getExaminationTopic()+quote+separator+
+                                   quote+request.getExaminationSubTopic()+quote+separator+
+                                   quote+request.getExaminationPrice()+quote+separator+
+                                   quote+request.getExaminationSummary()+quote;
         return ContractUtils.execContract(contractName, contractAddress,callerId, contractArguments, gas);
     }
 
